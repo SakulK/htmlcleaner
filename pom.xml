@@ -11,8 +11,9 @@
     <description>
         HtmlCleaner is an HTML parser written in Java. It transforms dirty HTML to well-formed XML following
         the same rules that most web-browsers use.
+        Fork of http://htmlcleaner.sourceforge.net/
     </description>
-    <url>http://htmlcleaner.sourceforge.net/</url>
+    <url>https://github.com/SakulK/htmlcleaner</url>
     <inceptionYear>2006</inceptionYear>
 
     <licenses>
@@ -38,10 +39,19 @@
             <timezone>1</timezone>
             <email>vnikic@users.sourceforge.net</email>
         </developer>
+        <developer>
+            <name>Łukasz Krenski</name>
+            <id>sakulk</id>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>1</timezone>
+            <email>sakulk@gmail.com</email>
+        </developer>
     </developers>
 
     <scm>
-        <url>http://htmlcleaner.svn.sourceforge.net/</url>
+        <url>https://github.com/SakulK/htmlcleaner</url>
     </scm>
 
     <dependencies>

@@ -643,7 +643,7 @@ public class HtmlCleaner {
 
                     nodeIterator.previous();
 				// if this open tag is not allowed inside last open tag, then it must be moved to the place where it can be
-                } else if ( !isAllowedInLastOpenTag(token, cleanTimeValues) ) {
+                } else if (properties.allowMovingNodesOutOfWrongEnclosingNodes && !isAllowedInLastOpenTag(token, cleanTimeValues) ) {
                     saveToLastOpenTag(nodeList, token, cleanTimeValues);
                     nodeIterator.set(null);
 				// if it is known HTML tag but doesn't allow body, it is immediately closed

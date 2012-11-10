@@ -67,6 +67,7 @@ public class CleanerProperties {
     boolean allowHtmlInsideAttributes = false;
     boolean ignoreQuestAndExclam = true;
     boolean namespacesAware = true;
+    boolean allowMovingNodesOutOfWrongEnclosingNodes = true;
     String hyphenReplacementInComment = "=";
     String pruneTags = null;
     String booleanAttributeValues = BOOL_ATT_SELF;
@@ -256,5 +257,12 @@ public class CleanerProperties {
             this.booleanAttributeValues = BOOL_ATT_SELF;    
         }
     }
-    
+
+    public boolean isAllowMovingNodesOutOfWrongEnclosingNodes() {
+        return allowMovingNodesOutOfWrongEnclosingNodes;
+    }
+
+    public void setAllowMovingNodesOutOfWrongEnclosingNodes(boolean allowMovingNodesOutOfWrongEnclosingNodes) {
+        this.allowMovingNodesOutOfWrongEnclosingNodes = allowMovingNodesOutOfWrongEnclosingNodes;
+    }
 }
