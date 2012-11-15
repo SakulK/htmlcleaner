@@ -39,13 +39,14 @@ package org.htmlcleaner;
 
 import java.io.IOException;
 import java.io.Writer;
+import java.io.Serializable;
 
 /**
  * <p>
  * 	Base token interface. Tokens are individual entities recognized by HTML parser.
  * </p>
  */
-public interface BaseToken {
+public interface BaseToken implements Serializable {
 	
 	public void serialize(Serializer serializer, Writer writer) throws IOException;
 	
