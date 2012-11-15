@@ -46,7 +46,7 @@ import java.io.Serializable;
  * 	Base token interface. Tokens are individual entities recognized by HTML parser.
  * </p>
  */
-public interface BaseToken implements Serializable {
+public interface BaseToken extends Serializable {
 	
 	public void serialize(Serializer serializer, Writer writer) throws IOException;
 	
